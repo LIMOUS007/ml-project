@@ -14,7 +14,7 @@ def normalize(ans, answer_type):
     else:  
         return str(ans).strip()
 
-def run_session(user_id, duration_seconds = 50):
+def run_session(user_id, duration_seconds):
     session_id = str(uuid.uuid4())
     user_state = {
         "difficulty": 0
@@ -62,4 +62,4 @@ def run_session(user_id, duration_seconds = 50):
         )
         
 if __name__ == "__main__":
-    run_session(user_id="test_user", duration_seconds = 50)
+    run_session(user_id="test_user", duration_seconds = 300)
