@@ -579,3 +579,258 @@ Is D left of G?",yes,yes,True,6.00344705581665
 2026-01-19T00:14:59.591107,test_user,ae2c6039-2c65-4504-af92-393b5410add1,29,numerical,NUM-RATIOSCALING-50,50,52,integer,"4 -> 32, 9 -> ?",72,72,True,4.366000652313232
 2026-01-19T00:15:05.384689,test_user,ae2c6039-2c65-4504-af92-393b5410add1,30,numerical,NUM-RATIO-INVERSE-52,52,54,integer,"90 -> 6, 105 -> ?",7,7,True,5.792189836502075
 2026-01-19T00:15:25.174425,test_user,ae2c6039-2c65-4504-af92-393b5410add1,31,numerical,NUM-SQUARE-54,54,56,integer,What is 19^2?,361,361,True,19.788585901260376
+2026-01-19T12:00:52.905663,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,1,pattern,PAT-MP-0-4-2,0,2,integer,"4, 8, 16, 32, ?",64,64,True,3.759843349456787
+2026-01-19T12:00:55.376764,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,2,pattern,PAT-MP-2-4-2,2,1,integer,"5, 10, 20, 40, ?",80,40,False,2.4691150188446045
+2026-01-19T12:01:01.475919,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,3,numerical,NUM-RATIOSCALING-1,1,3,integer,"4 -> 12, 2 -> ?",6,6,True,6.097366571426392
+2026-01-19T12:01:03.137566,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,4,numerical,NUM-SQUARE-3,3,5,integer,What is 4^2?,16,16,True,1.6599814891815186
+2026-01-19T12:01:07.638010,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,5,numerical,NUM-RATIO-INVERSE-5,5,7,integer,"24 -> 8, 30 -> ?",10,10,True,4.4982991218566895
+2026-01-19T12:01:09.388946,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,6,numerical,NUM-SQUARE-7,7,9,integer,What is 4^2?,16,16,True,1.7487733364105225
+2026-01-19T12:01:11.423543,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,7,numerical,NUM-SQUARE-9,9,11,integer,What is 7^2?,49,49,True,2.032683849334717
+2026-01-19T12:01:16.471651,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,8,numerical,NUM-RATIOSCALING-11,11,13,integer,"2 -> 12, 9 -> ?",54,54,True,5.046239137649536
+2026-01-19T12:01:21.059480,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,9,pattern,PAT-CP-13-4-7,13,15,integer,"12, 8, 14, 17, 12, 8, 14, ?",17,17,True,4.58591365814209
+2026-01-19T12:01:48.707619,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,10,pattern,PAT-MIXED-15-3-8-8,15,17,integer,"3, 9, 16, 20, 60, 67, 71, ?",213,213,True,27.645243406295776
+2026-01-19T12:01:56.024141,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,11,logical,LOG-IMP-17-6-4,17,19,yesno,"B is True.
+A is True.
+If F is True, then A is True.
+If F is True, then E is True.
+If D is True, then E is True.
+If B is True, then D is True.
+Is E True?",yes,yes,True,7.313233375549316
+2026-01-19T12:02:01.126262,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,12,numerical,NUM-NEARBOUNDARY-19,19,21,integer,What is 209 + 213?,422,422,True,5.100462198257446
+2026-01-19T12:02:04.127124,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,13,numerical,NUM-RATIOSCALING-21,21,23,integer,"3 -> 30, 5 -> ?",50,50,True,2.9991002082824707
+2026-01-19T12:02:11.508582,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,14,pattern,PAT-MP-23-7-2,23,25,integer,"16, 32, 64, 128, 256, 512, 1024, ?",2048,2048,True,7.379543304443359
+2026-01-19T12:02:25.501242,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,15,numerical,NUM-DIV-25,25,27,integer,What is 22500 divided by 2500?,9,9,True,13.990801811218262
+2026-01-19T12:02:36.381301,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,16,logical,LOG-IMP-27-9-7,27,29,yesno,"B is True.
+C is True.
+If A is True, then E is True.
+If E is True, then C is True.
+If C is True, then F is True.
+If B is True, then G is True.
+If E is True, then A is True.
+If D is True, then I is True.
+If B is True, then D is True.
+Is G True?",yes,yes,True,10.87764048576355
+2026-01-19T12:02:42.800849,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,17,numerical,NUM-RATIO-INVERSE-29,29,31,integer,"75 -> 5, 45 -> ?",3,3,True,6.417614936828613
+2026-01-19T12:02:51.889647,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,18,logical,LOG-CONSTRAINT-31-9-8,31,33,yesno,"H is left of C.
+A is left of G.
+D is left of F.
+F is left of C.
+D is left of E.
+H is left of F.
+I is left of B.
+E is left of I.
+Is B left of E?",no,no,True,9.08660626411438
+2026-01-19T12:03:03.023881,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,19,logical,LOG-CONSTRAINT-33-7-8,33,35,yesno,"A is left of E.
+B is left of A.
+C is left of F.
+F is left of E.
+E is left of B.
+G is left of F.
+D is left of G.
+E is left of D.
+Is C left of B?",yes,yes,True,11.131995916366577
+2026-01-19T12:03:11.531898,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,20,logical,LOG-BOOL-35-6-3,35,37,boolean,"A is False.
+B is False.
+C is True.
+D is True.
+E is False.
+F is True.
+What is: (((E OR F) AND A) AND B)?",False,f,True,8.505902528762817
+2026-01-19T12:03:22.297413,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,21,pattern,PAT-MP-37-8-3,37,39,integer,"11, 33, 99, 297, 891, 2673, 8019, 24057, ?",72171,72171,True,10.763899803161621
+2026-01-19T12:03:24.717521,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,22,numerical,NUM-RATIOSCALING-39,39,41,integer,"3 -> 33, 6 -> ?",66,66,True,2.4181032180786133
+2026-01-19T12:03:27.477408,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,23,numerical,NUM-RATIOSCALING-41,41,43,integer,"4 -> 44, 6 -> ?",66,66,True,2.7439076900482178
+2026-01-19T12:03:40.783896,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,24,logical,LOG-BOOL-43-4-5,43,45,boolean,"A is True.
+B is False.
+C is False.
+D is True.
+What is: (((((B OR (NOT B)) OR A) AND B) AND C) OR C)?",False,f,True,13.304444074630737
+2026-01-19T12:03:54.596821,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,25,numerical,NUM-NEARBOUNDARY-45,45,47,integer,What is 994 + 959?,1953,1953,True,13.810665845870972
+2026-01-19T12:03:58.006503,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,26,pattern,PAT-CP-47-8-19,47,49,integer,"10, 11, 17, 16, 11, 20, 9, 1, 10, 11, 17, 16, 11, 20, 9, 1, 10, 11, 17, ?",16,16,True,3.4077136516571045
+2026-01-19T12:05:00.616284,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,27,numerical,NUM-SQUARE-49,49,51,integer,What is 37^2?,1369,1369,True,62.607903480529785
+2026-01-19T12:05:11.179804,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,28,numerical,NUM-RATIOSCALING-51,51,53,integer,"6 -> 90, 9 -> ?",135,135,True,10.561670780181885
+2026-01-19T12:05:24.875703,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,29,numerical,NUM-RATIO-INVERSE-53,53,55,integer,"78 -> 6, 91 -> ?",7,7,True,13.694154262542725
+2026-01-19T12:05:42.056452,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,30,logical,LOG-COMP-55-17,55,57,yesno,P is older than N. N is older than E. A is older than P. F is older than B. M is older than J. F is older than I. K is older than F. E is older than O. Is E older than A?,no,no,True,17.178383111953735
+2026-01-19T12:05:44.700254,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,31,numerical,NUM-RATIOSCALING-57,57,59,integer,"5 -> 55, 4 -> ?",44,44,True,2.64192795753479
+2026-01-19T12:06:10.315325,test_user,0f809a42-6225-4509-aea3-0f4e0773a483,32,logical,LOG-IMP-59-8-7,59,61,yesno,"E is True.
+If H is True, then C is True.
+If E is True, then C is True.
+If H is True, then G is True.
+If C is True, then A is True.
+If A is True, then H is True.
+If G is True, then D is True.
+If A is True, then B is True.
+Is D True?",yes,yes,True,25.612714052200317
+2026-01-19T13:02:35.189728,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,1,numerical,NUM-DIV-0,0,2,integer,What is 3800 divided by 200?,19,19,True,4.596099615097046
+2026-01-19T13:02:36.559579,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,2,numerical,NUM-NEARBOUNDARY-2,2,4,integer,What is 6 + 3?,9,9,True,1.367835283279419
+2026-01-19T13:02:39.167009,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,3,numerical,NUM-RATIOSCALING-4,4,6,integer,"3 -> 6, 9 -> ?",18,18,True,2.6052582263946533
+2026-01-19T13:02:43.681215,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,4,logical,LOG-IMP-6-4-3,6,8,yesno,"B is True.
+If B is True, then A is True.
+If C is True, then A is True.
+If A is True, then C is True.
+Is C True?",yes,yes,True,4.511998891830444
+2026-01-19T13:02:47.638465,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,5,logical,LOG-CONSTRAINT-8-4-3,8,10,yesno,"D is left of B.
+A is left of B.
+A is left of C.
+Is D left of B?",yes,yes,True,3.9518232345581055
+2026-01-19T13:02:50.540632,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,6,numerical,NUM-RATIOSCALING-10,10,12,integer,"2 -> 12, 4 -> ?",24,24,True,2.9003124237060547
+2026-01-19T13:02:55.440742,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,7,numerical,NUM-RATIO-INVERSE-12,12,14,integer,"45 -> 9, 40 -> ?",8,8,True,4.897688627243042
+2026-01-19T13:03:00.773434,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,8,logical,LOG-BOOL-14-3-2,14,16,boolean,"A is True.
+B is False.
+C is True.
+What is: ((C OR C) OR (NOT A))?",True,t,True,5.330800294876099
+2026-01-19T13:03:03.958962,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,9,numerical,NUM-RATIOSCALING-16,16,18,integer,"4 -> 24, 5 -> ?",30,30,True,3.183725595474243
+2026-01-19T13:03:08.089408,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,10,numerical,NUM-RATIO-INVERSE-18,18,20,integer,"72 -> 8, 54 -> ?",6,6,True,4.128612041473389
+2026-01-19T13:03:34.824983,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,11,pattern,PAT-MP-20-6-3,20,22,integer,"8, 24, 72, 216, 648, 1944, ?",5832,5832,True,26.733630180358887
+2026-01-19T13:03:42.833716,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,12,numerical,NUM-NEARBOUNDARY-22,22,24,integer,What is 1018 - 522?,496,496,True,8.006781339645386
+2026-01-19T13:03:47.262987,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,13,pattern,PAT-CP-24-5-13,24,26,integer,"19, 17, 17, 4, 14, 19, 17, 17, 4, 14, 19, 17, 17, ?",4,4,True,4.427447080612183
+2026-01-19T13:03:51.273954,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,14,numerical,NUM-SQUARE-26,26,28,integer,What is 15^2?,225,225,True,4.009108304977417
+2026-01-19T13:04:40.265631,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,15,logical,LOG-CONSTRAINT-28-8-8,28,30,yesno,"G is faster than C.
+G is faster than H.
+F is faster than D.
+D is faster than G.
+C is faster than E.
+E is faster than B.
+H is faster than B.
+G is faster than F.
+Is D faster than E?",yes,yes,True,48.98958778381348
+2026-01-19T13:04:57.478763,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,16,logical,LOG-BOOL-30-6-5,30,32,boolean,"A is False.
+B is True.
+C is False.
+D is False.
+E is False.
+F is False.
+What is: (((((E AND (NOT D)) AND E) OR (NOT C)) AND A) OR (NOT C))?",True,t,True,17.211012363433838
+2026-01-19T13:05:19.263824,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,17,pattern,PAT-MIXED-32-4-13-12,32,34,integer,"17, 28, 40, 50, 52, 63, 75, 85, 87, 98, 110, 120, ?",122,122,True,21.78305459022522
+2026-01-19T13:05:37.105787,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,18,pattern,PAT-MP-34-8-3,34,36,integer,"14, 42, 126, 378, 1134, 3402, 10206, 30618, ?",91854,91854,True,17.84015202522278
+2026-01-19T13:05:45.025294,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,19,numerical,NUM-DIV-36,36,35,integer,What is 2160 divided by 180?,12,8,False,7.917680025100708
+2026-01-19T13:05:55.897609,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,20,numerical,NUM-RATIOSCALING-35,35,37,integer,"5 -> 40, 9 -> ?",72,72,True,10.870527505874634
+2026-01-19T13:06:11.857840,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,21,pattern,PAT-MP-37-7-3,37,39,integer,"16, 48, 144, 432, 1296, 3888, 11664, ?",34992,34992,True,15.958366632461548
+2026-01-19T13:06:20.095089,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,22,numerical,NUM-NEARBOUNDARY-39,39,41,integer,What is 1968 - 1016?,952,952,True,8.235464572906494
+2026-01-19T13:06:29.028243,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,23,numerical,NUM-RATIOSCALING-41,41,40,integer,"4 -> 32, 2 -> ?",16,16\,0,8.93131971359253
+2026-01-19T13:06:45.437555,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,24,pattern,PAT-MP-40-7-3,40,42,integer,"10, 30, 90, 270, 810, 2430, 7290, ?",21870,21870,True,16.407174825668335
+2026-01-19T13:06:59.795046,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,25,pattern,PAT-MP-42-7-3,42,44,integer,"28, 84, 252, 756, 2268, 6804, 20412, ?",61236,61236,True,14.355700016021729
+2026-01-19T13:07:30.011313,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,26,logical,LOG-BOOL-44-6-3,44,46,boolean,"A is False.
+B is False.
+C is False.
+D is True.
+E is False.
+F is True.
+What is: (NOT (((E OR (NOT C)) AND B) AND D))?",True,t,True,30.2142174243927
+2026-01-19T13:08:27.686641,test_user,817742fc-847d-44dd-ad2e-3e962c22a153,27,numerical,NUM-SQUARE-46,46,48,integer,What is 32^2?,1024,1024,True,57.673311710357666
+2026-01-19T14:09:54.712896,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,1,numerical,NUM-DIV-0,0,2,integer,What is 3900 divided by 300?,13,13,True,3.4368515014648438
+2026-01-19T14:09:59.319137,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,2,logical,LOG-CONSTRAINT-2-3-2,2,4,yesno,"C is faster than A.
+B is faster than A.
+Is B faster than A?",yes,yes,True,4.6026527881622314
+2026-01-19T14:10:01.627798,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,3,numerical,NUM-SQUARE-4,4,6,integer,What is 6^2?,36,36,True,2.3073794841766357
+2026-01-19T14:10:07.586218,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,4,pattern,PAT-MIXED-6-2-6-5,6,8,integer,"6, 8, 13, 15, 20, ?",22,22,True,5.957252502441406
+2026-01-19T14:10:15.076360,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,5,logical,LOG-CONSTRAINT-8-4-3,8,10,yesno,"D is above B.
+D is above A.
+A is above C.
+Is D above C?",yes,yes,True,7.488820791244507
+2026-01-19T14:10:23.902003,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,6,logical,LOG-COMP-10-7,10,12,yesno,B is larger than D. D is larger than F. C is larger than A. Is B larger than F?,yes,yes,True,8.824275016784668
+2026-01-19T14:10:33.272625,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,7,logical,LOG-BOOL-12-3-2,12,14,boolean,"A is False.
+B is False.
+C is True.
+What is: (NOT ((C OR (NOT C)) AND B))?",True,t,True,9.369340419769287
+2026-01-19T14:10:42.138368,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,8,logical,LOG-BOOL-14-3-2,14,16,boolean,"A is True.
+B is False.
+C is False.
+What is: (NOT ((A OR (NOT B)) OR B))?",False,f,True,8.864169836044312
+2026-01-19T14:11:02.300453,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,9,pattern,PAT-MP-16-6-3,16,18,integer,"18, 54, 162, 486, 1458, 4374, ?",13122,13122,True,20.16064476966858
+2026-01-19T14:11:10.234946,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,10,logical,LOG-COMP-18-11,18,20,yesno,J is heavier than K. K is heavier than A. C is heavier than D. I is heavier than K. C is heavier than K. Is C heavier than A?,yes,y,True,7.931772708892822
+2026-01-19T14:11:18.835067,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,11,logical,LOG-IMP-20-7-6,20,22,yesno,"B is True.
+E is True.
+If E is True, then F is True.
+If A is True, then D is True.
+If A is True, then G is True.
+If F is True, then D is True.
+If B is True, then F is True.
+If E is True, then D is True.
+Is F True?",yes,y,True,8.59812307357788
+2026-01-19T14:11:24.457290,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,12,pattern,PAT-CP-22-5-12,22,24,integer,"19, 19, 19, 13, 5, 19, 19, 19, 13, 5, 19, 19, ?",19,19,True,5.62079644203186
+2026-01-19T14:11:52.440541,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,13,logical,LOG-CONSTRAINT-24-7-5,24,26,yesno,"G is left of D.
+F is left of A.
+G is left of C.
+E is left of B.
+D is left of F.
+Is F left of G?",no,no,True,27.9814236164093
+2026-01-19T14:12:13.379140,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,14,logical,LOG-IMP-26-7-6,26,28,yesno,"C is True.
+G is True.
+If C is True, then F is True.
+If C is True, then A is True.
+If B is True, then G is True.
+If A is True, then C is True.
+If D is True, then A is True.
+If A is True, then B is True.
+Is B True?",yes,yes,True,20.936891078948975
+2026-01-19T14:12:21.647291,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,15,logical,LOG-CONSTRAINT-28-7-8,28,30,yesno,"F is faster than B.
+A is faster than D.
+B is faster than C.
+B is faster than G.
+F is faster than G.
+A is faster than C.
+D is faster than F.
+E is faster than G.
+Is A faster than F?",yes,yes,True,8.266409158706665
+2026-01-19T14:12:52.647144,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,16,logical,LOG-COMP-30-25,30,32,yesno,F is larger than T. H is larger than L. K is larger than B. B is larger than H. L is larger than X. J is larger than X. O is larger than N. B is larger than V. O is larger than K. X is larger than R. P is larger than L. V is larger than T. Is K larger than X?,yes,yes,True,30.99560570716858
+2026-01-19T14:12:55.858875,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,17,numerical,NUM-RATIOSCALING-32,32,34,integer,"10 -> 80, 2 -> ?",16,16,True,3.2104387283325195
+2026-01-19T14:13:02.360040,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,18,pattern,PAT-CP-34-7-17,34,36,integer,"6, 5, 18, 9, 6, 6, 20, 6, 5, 18, 9, 6, 6, 20, 6, 5, 18, ?",9,9,True,6.5000433921813965
+2026-01-19T14:13:05.171554,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,19,numerical,NUM-RATIO-INVERSE-36,36,38,integer,"24 -> 3, 16 -> ?",2,2,True,2.8104190826416016
+2026-01-19T14:13:09.861423,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,20,pattern,PAT-CP-38-8-14,38,40,integer,"18, 20, 11, 15, 5, 8, 1, 16, 18, 20, 11, 15, 5, 8, ?",1,1,True,4.6885035037994385
+2026-01-19T14:13:34.334153,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,21,logical,LOG-COMP-40-23,40,42,yesno,I is older than G. N is older than I. E is older than H. P is older than F. W is older than H. G is older than K. T is older than K. D is older than Q. E is older than N. I is older than W. K is older than V. Is I older than H?,yes,yes,True,24.470784187316895
+2026-01-19T14:13:43.664185,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,22,logical,LOG-BOOL-42-4-3,42,44,boolean,"A is True.
+B is True.
+C is False.
+D is False.
+What is: (NOT (((A AND (NOT A)) OR (NOT A)) OR B))?",False,f,True,9.328503847122192
+2026-01-19T14:13:46.485751,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,23,numerical,NUM-SQUARE-44,44,46,integer,What is 12^2?,144,144,True,2.8199567794799805
+2026-01-19T14:13:59.606847,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,24,logical,LOG-BOOL-46-4-3,46,48,boolean,"A is False.
+B is True.
+C is True.
+D is True.
+What is: (NOT (((A OR A) OR C) OR (NOT C)))?",False,f,True,13.11940312385559
+2026-01-19T14:14:04.856892,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,25,pattern,PAT-CP-48-7-13,48,50,integer,"13, 3, 19, 18, 8, 6, 4, 13, 3, 19, 18, 8, 6, ?",4,4,True,5.248677730560303
+2026-01-19T14:14:16.900620,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,26,logical,LOG-BOOL-50-6-5,50,52,boolean,"A is False.
+B is True.
+C is True.
+D is True.
+E is False.
+F is True.
+What is: (((((B AND D) OR B) OR C) AND (NOT D)) OR A)?",False,f,True,12.042025804519653
+2026-01-19T14:14:20.019614,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,27,numerical,NUM-RATIO-INVERSE-52,52,54,integer,"81 -> 9, 54 -> ?",6,6,True,3.1174957752227783
+2026-01-19T14:14:26.520503,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,28,logical,LOG-CONSTRAINT-54-9-6,54,56,yesno,"I is faster than C.
+A is faster than D.
+I is faster than B.
+B is faster than F.
+H is faster than D.
+D is faster than B.
+Is D faster than F?",yes,y,True,6.499406099319458
+2026-01-19T14:14:33.500005,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,29,logical,LOG-CONSTRAINT-56-7-8,56,58,yesno,"F is above B.
+D is above G.
+E is above B.
+A is above C.
+A is above G.
+E is above A.
+C is above D.
+E is above C.
+Is C above G?",yes,y,True,6.978054523468018
+2026-01-19T14:14:39.727854,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,30,logical,LOG-CONSTRAINT-58-9-8,58,60,yesno,"C is above E.
+C is above F.
+B is above G.
+C is above A.
+F is above H.
+F is above D.
+H is above G.
+A is above I.
+Is I above C?",no,n,True,6.226420640945435
+2026-01-19T14:14:48.684263,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,31,logical,LOG-IMP-60-9-7,60,62,yesno,"E is True.
+H is True.
+If F is True, then A is True.
+If B is True, then C is True.
+If F is True, then H is True.
+If E is True, then I is True.
+If F is True, then G is True.
+If B is True, then F is True.
+If F is True, then C is True.
+Is I True?",yes,y,True,8.95495343208313
+2026-01-19T14:14:53.872368,test_user,47940493-69bf-4ad9-ac5b-4b747c373472,32,pattern,PAT-AP-62-10-25,62,64,integer,"-30, -27, -24, -21, -18, -15, -12, -9, -6, -3, ?",0,0,True,5.186827182769775
