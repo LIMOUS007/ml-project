@@ -26,8 +26,8 @@ def normalize(ans, answer_type):
     return s
     
 
-def log_attempt(user_id, session_id, task_index, task, user_answer, time_taken, difficulty_before, difficulty_after):
-    csv_file = os.path.join(os.getcwd(), "data_log1.csv")
+def log_attempt(user_id, session_id, task_index, task, user_answer, time_taken, difficulty_before, difficulty_after, delta, p_correct, expected_time):
+    csv_file = os.path.join(os.getcwd(), "data_log.csv")
     fields = [
         "timestamp",
         "user_id",
@@ -37,12 +37,15 @@ def log_attempt(user_id, session_id, task_index, task, user_answer, time_taken, 
         "task_id",
         "difficulty_before",
         "difficulty_after",
+        "delta",
         "answer_type",
         "question",
         "answer",
         "user_answer",
         "is_correct",
         "time_taken",
+        "p_correct",
+        "expected_time"
     ]
     file_exists = os.path.isfile(csv_file)
     with open(csv_file,"a", newline="") as f:
@@ -60,10 +63,13 @@ def log_attempt(user_id, session_id, task_index, task, user_answer, time_taken, 
             "task_id": task["task_id"],
             "difficulty_before": difficulty_before,
             "difficulty_after": difficulty_after,
+            "delta": delta,
             "answer_type": task["answer_type"],
             "question": task["question"],
             "answer": task["answer"],
             "user_answer": user_answer,
             "is_correct": int(norm_user is not None) and (norm_user == norm_ans),
             "time_taken": time_taken,
+            "expected_time": expected_time,
+            "p_correct": p_correct,
         })

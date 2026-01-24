@@ -80,7 +80,10 @@ def run_session(user_id, duration_seconds):
             user_answer=user_answer,
             time_taken=time_taken,
             difficulty_before = difficulty_before,
-            difficulty_after = difficulty_after
+            difficulty_after = difficulty_after,
+            delta = delta,
+            p_correct = p_correct,
+            expected_time = expected_time
         )
         task_index += 1
         print("Correct:", correct)
