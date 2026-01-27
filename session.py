@@ -99,4 +99,4 @@ def run_session(user_id, duration_seconds):
         )
         
 if __name__ == "__main__":
-    run_session(user_id="test_user", duration_seconds = 300)
+    run_session(user_id="LIMOUS", duration_seconds = 300)

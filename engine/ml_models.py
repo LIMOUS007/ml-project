@@ -1,5 +1,6 @@
 import pickle
 import pandas as pd
+import numpy as np
 def load_models():
     with open("correct_model.pkl", "rb") as f:
         correct_model = pickle.load(f)
@@ -26,5 +27,5 @@ def build_feature_row(difficulty_before, skill, task_subfamily, answer_type, fea
 def predict(correct_model, time_model, feature_cols, difficulty_before, skill, task_subfamily, answer_type):
     x = build_feature_row(difficulty_before, skill, task_subfamily, answer_type, feature_cols)
     p_correct = correct_model.predict_proba(x)[0, 1]
-    expected_time = float(time_model.predict(x)[0])
+    expected_time = float(np.expm1(time_model.predict(x)[0]))
     return p_correct, expected_time

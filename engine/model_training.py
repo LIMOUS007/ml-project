@@ -29,7 +29,7 @@ df = df[df["is_correct"].isin([0, 1])]
 df["task_subfamily"] = df["task_id"].str.split("-").str[1]
 x = df[[ "difficulty_before", "skill", "task_subfamily", "answer_type" ]]
 y_correct = df["is_correct"].astype(int)
-y_time = df["time_taken"].astype(float)
+y_time = np.log1p(df["time_taken"].astype(float))
 x = pd.get_dummies(x, columns=["skill","answer_type","task_subfamily"], dtype=int)
 feature_cols = x.columns.tolist()
 print("Num features:", len(feature_cols))
