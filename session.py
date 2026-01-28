@@ -1,5 +1,6 @@
 import time
 import uuid
+import random
 from engine.task_picker import pick_task
 from engine.difficulty import update_difficulty_ml
 from engine.logger import log_attempt
@@ -31,7 +32,9 @@ def run_session(user_id, duration_seconds):
     session_id = str(uuid.uuid4())
     correct_model, time_model, feature_cols = load_models()
     user_state = {
-        "difficulty": 0
+        "numerical": 0,
+        "logical": 0,
+        "pattern": 0
     }
     session_start = time.time()
     task_index = 0
@@ -40,8 +43,9 @@ def run_session(user_id, duration_seconds):
         now = time.time()
         if now - session_start >= duration_seconds:
             break
-        difficulty_before = user_state["difficulty"]
-        task = pick_task({"difficulty": difficulty_before})
+        skill = random.choice(["numerical", "logical", "pattern"])
+        difficulty_before = user_state[skill]
+        task = pick_task({"skill": skill, "difficulty": difficulty_before})
         task_subfamily = task["task_id"].split("-")[1]
         p_correct, expected_time = predict(
             correct_model, time_model, feature_cols,
@@ -71,7 +75,17 @@ def run_session(user_id, duration_seconds):
             expected_time=expected_time,
             p_correct=p_correct
         )
-        user_state["difficulty"] = difficulty_after
+        user_state[skill] = difficulty_after
+        difficulty_snapshot_before = {
+            "numerical": user_state["numerical"],
+            "logical": user_state["logical"],
+            "pattern": user_state["pattern"]
+        }
+        difficulty_snapshot_after = {
+            "numerical": user_state["numerical"],
+            "logical": user_state["logical"],
+            "pattern": user_state["pattern"]
+        }
         log_attempt(
             user_id=user_id,
             session_id = session_id,
@@ -82,12 +96,20 @@ def run_session(user_id, duration_seconds):
             difficulty_before = difficulty_before,
             difficulty_after = difficulty_after,
             delta = delta,
+            difficulty_active_before = difficulty_before,
+            difficulty_active_after = difficulty_after,
+            difficulty_numerical_before=difficulty_snapshot_before["numerical"],
+            difficulty_logical_before=difficulty_snapshot_before["logical"],
+            difficulty_pattern_before=difficulty_snapshot_before["pattern"],
+            difficulty_numerical_after=difficulty_snapshot_after["numerical"],
+            difficulty_logical_after=difficulty_snapshot_after["logical"],
+            difficulty_pattern_after=difficulty_snapshot_after["pattern"],
             p_correct = p_correct,
-            expected_time = expected_time
+            expected_time = expected_time,
         )
         task_index += 1
         print("Correct:", correct)
-        print("New difficulty:", user_state["difficulty"])
+        print(f"New {skill} difficulty:", user_state[skill])
         print("Delta: ", delta)
     log_session_summary(
             user_id = user_id,

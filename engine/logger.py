@@ -26,8 +26,29 @@ def normalize(ans, answer_type):
     return s
     
 
-def log_attempt(user_id, session_id, task_index, task, user_answer, time_taken, difficulty_before, difficulty_after, delta, p_correct, expected_time):
-    csv_file = os.path.join(os.getcwd(), "data_log.csv")
+
+def log_attempt(
+    user_id,
+    session_id,
+    task_index,
+    task,
+    user_answer,
+    time_taken,
+    difficulty_before,
+    difficulty_after,
+    delta,
+    difficulty_active_before,
+    difficulty_active_after,
+    difficulty_numerical_before,
+    difficulty_logical_before,
+    difficulty_pattern_before,
+    difficulty_numerical_after,
+    difficulty_logical_after,
+    difficulty_pattern_after,
+    expected_time,
+    p_correct
+    ):
+    csv_file = os.path.join(os.getcwd(), "data_log_new.csv")
     fields = [
         "timestamp",
         "user_id",
@@ -35,17 +56,25 @@ def log_attempt(user_id, session_id, task_index, task, user_answer, time_taken, 
         "task_index",
         "skill",
         "task_id",
+        "answer_type",
         "difficulty_before",
         "difficulty_after",
         "delta",
-        "answer_type",
+        "difficulty_active_before",
+        "difficulty_active_after",
+        "difficulty_numerical_before",
+        "difficulty_logical_before",
+        "difficulty_pattern_before",
+        "difficulty_numerical_after",
+        "difficulty_logical_after",
+        "difficulty_pattern_after",
         "question",
         "answer",
         "user_answer",
         "is_correct",
         "time_taken",
         "expected_time",
-        "p_correct"
+        "p_correct",
     ]
     file_exists = os.path.isfile(csv_file)
     with open(csv_file,"a", newline="") as f:
@@ -61,10 +90,18 @@ def log_attempt(user_id, session_id, task_index, task, user_answer, time_taken, 
             "task_index": task_index,
             "skill": task["skill"],
             "task_id": task["task_id"],
+            "answer_type": task["answer_type"],
             "difficulty_before": difficulty_before,
             "difficulty_after": difficulty_after,
             "delta": delta,
-            "answer_type": task["answer_type"],
+            "difficulty_active_before": difficulty_active_before,
+            "difficulty_active_after": difficulty_active_after,
+            "difficulty_numerical_before": difficulty_numerical_before,
+            "difficulty_logical_before": difficulty_logical_before,
+            "difficulty_pattern_before": difficulty_pattern_before,
+            "difficulty_numerical_after": difficulty_numerical_after,
+            "difficulty_logical_after": difficulty_logical_after,
+            "difficulty_pattern_after": difficulty_pattern_after,
             "question": task["question"],
             "answer": task["answer"],
             "user_answer": user_answer,

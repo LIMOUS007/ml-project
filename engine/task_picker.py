@@ -35,6 +35,5 @@ SKILLS = {
 }
 
 def pick_task(user_state):
-    skill = random.choice(list(SKILLS.keys()))
-    generator = random.choice(SKILLS[skill])
+    generator = random.choice(SKILLS[user_state["skill"]])
     return generator(user_state["difficulty"])
